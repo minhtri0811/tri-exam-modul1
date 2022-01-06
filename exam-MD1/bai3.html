@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function isFibonacci(num) {
+        let a = 0;
+        let b = 1;
+        let c = a + b;
+        while (a <= num) {
+            if (a == num) {
+                return num + " co nam trong day fibonacci";
+            }
+            a = b;
+            b = c;
+            c = a + b;
+        }
+        return num + " khong nam trong day fibonacci";
+    }
+
+    let num = 2;
+    document.writeln(isFibonacci(num))
+</script>
+</body>
+</html>
